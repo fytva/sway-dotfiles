@@ -1,0 +1,29 @@
+[main]
+shell = /usr/bin/zsh
+font=Iosevka Nerd Font:size=18
+
+[colors-dark]
+background=000000
+foreground=e5e5e5
+
+regular0=000000   # black
+regular1=cd0000   # red3
+regular2=00cd00   # green3
+regular3=cdcd00   # yellow3
+regular4=2596be
+regular5=cd00cd   # magenta3
+regular6=00cdcd   # cyan3
+regular7=e5e5e5   # gray90
+
+# bright colors
+bright0=7f7f7f
+bright1=ff0000
+bright2=00ff00
+bright3=ffff00
+bright4=5c5cff
+bright5=ff00ff
+bright6=00ffff
+bright7=ffffff
+
+selection-background=555555
+selection-foreground=cccccc
