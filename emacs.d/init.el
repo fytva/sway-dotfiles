@@ -7,7 +7,7 @@
 (set-face-attribute 'default nil
                     :family "Iosevka Nerd Font"
 
-                    :height 160)
+                    :height 180)
 
 
 (setq inhibit-startup-screen t
@@ -56,6 +56,20 @@
   :ensure t
   :bind (("C-c n" . neotree-toggle))
   )
+
+(use-package pyvenv
+  :ensure t
+  :config
+  (pyvenv-mode 1))
+
+(use-package centaur-tabs
+  :ensure t
+  :demand
+  :config
+  (centaur-tabs-mode t)
+  :bind
+  ("C-<prior>" . centaur-tabs-backward)
+  ("C-<next>" . centaur-tabs-forward))
 
 ;; Example configuration for Consult
 (use-package consult
@@ -217,8 +231,8 @@
  '(global-display-line-numbers-mode t)
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(company consult doom-themes envrc flycheck lsp lsp-mode lsp-ui
-	     neotree orderless treemacs use-package vertico vterm))
+   '(centaur-tabs company consult doom-themes envrc flycheck lsp-mode
+		  neotree orderless pyvenv vertico vterm))
  '(scroll-bar-mode nil)
  '(tab-bar-mode 10)
  '(tool-bar-mode nil))
